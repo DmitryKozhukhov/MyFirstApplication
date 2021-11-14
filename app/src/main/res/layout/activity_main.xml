@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#00FFAA">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#E91E63"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="Hi, developer!"
+        android:textColor="#2237AA"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_700" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:text="Click Me"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="150dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="cursive"
+            android:text="Switch me"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Do you agree to the processing of your personal data?" />
+
+    </LinearLayout>
+
+    <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="100dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:background="@color/teal_700" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/purple_200"
+        android:nextFocusLeft="@color/purple_700" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
